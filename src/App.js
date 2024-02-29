@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import FunctionSimples from './Exemplos/FunctionSimples';
+import FunctionDupla from './Exemplos/FunctionDupla';
+import botao from './button/botao';
+import CompTitulo from './Componentes/CompTitulo';
 
 function App() {
 
@@ -25,10 +29,12 @@ function App() {
 
   return (
     <div className="App">
+      <CompTitulo class="CompTitulo blue">Titulo</CompTitulo>
+
       <h1> Use Effect foi chamado {useEffectCounter} vezes </h1>
-      {logado ? <p> Logado </p> : <p>Deslogado</p>}
-      <button onClick={Logar}>Logar</button>
-      <button onClick={Deslogar}> Deslogar </button>
+      {logado ? <p> Logado </p> : <p> Deslogado </p>}
+      <botao tarefa={Logar} class="botao red">Logar</botao>
+      <botao tarefa={Deslogar} class="botao purple">Deslogar</botao>
     </div>
   );
 }
