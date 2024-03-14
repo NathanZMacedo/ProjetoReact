@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import useApiAnimeData from '../../hooks/getAPIDATA';
+import AnimeCard from '../AnimeCard/AnimeCard'
 
 function AnimeComponent() {
     const [animeName, setAnimeName] = useState("one punch");
@@ -25,8 +26,10 @@ function AnimeComponent() {
         {error && <div>Error:{error} </div> }
 
         {Array.isArray(animeData)?(
-            <div>
-                {animeData.map((a)=>(<h1 key={a.id}>{a.title} {a.image} </h1>))}
+            <div className='anime-cards'>
+                {animeData.map((a)=>(
+                    <AnimeCard key={a.mal_id}{...a} ></AnimeCard>
+                ))}
             </div>
         ) : (animeData && <div> Sem nenhum anime</div> )
         }
