@@ -9,6 +9,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 10vw;
 }
 .card-title{
     font-size: 22px;
