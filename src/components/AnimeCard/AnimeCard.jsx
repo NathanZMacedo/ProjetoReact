@@ -5,6 +5,7 @@ import GenreIcon from '../GenreIcon/GenreIcon'
 
 function AnimeCard(props) {
   return (
+    
     <div className='anime-card'>
         <div className='card-title'>
             {props.title}

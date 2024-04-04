@@ -1,0 +1,38 @@
+.form-anime{
+    padding-inline: 30px;
+    background-color: #333;
+}
+
+.form-anime input{
+    padding: 10px;
+    border: 1px solid #1a1f1e;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 39.19%;
+}
+
+.form-anime button{
+    padding: 10px 20px;
+    background-color: #93ccc6   ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form-anime button:hover{
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+}
+.anime-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

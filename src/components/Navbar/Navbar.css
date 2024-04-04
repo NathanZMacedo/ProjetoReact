@@ -1,0 +1,26 @@
+#navbar {
+    height: 50px;
+    background-color: #93ccc6;
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid #333;
+    padding: 10px;
+    
+}
+
+nav div a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-inline: 10px;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+nav div a:hover {
+    background-color: #93dad3;
+    font-size: 1.65rem;
+}
