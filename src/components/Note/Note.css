@@ -1,0 +1,29 @@
+.noteContainer {
+    background-color: gray;
+    width: 400px;
+    margin: 15px;
+    padding: 16px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.edit {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+}
+
+.title{
+    font-size: 32px;
+}
+
+.date {
+    display: flex;
+    justify-content: flex-end;
+}

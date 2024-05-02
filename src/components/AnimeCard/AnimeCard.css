@@ -1,17 +1,15 @@
 .anime-card {
-    width: 45vw;
-    height: 10px;
-    padding: 10px;
-    border-radius: 8px;
-    padding-left: 20px;
-    min-height: 500px;
-    background-color: #93ccc6;
-    display: flex;
-    justify-content: space-between;
+    background-color: ;
+    padding: 10px 10px 10px 10px;
     flex-direction: column;
-    margin-top: 100px;
-    padding-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 45vw;
+    margin-top: 50px;
+    border: solid grey 4px;
 }
+
 .card-title{
     font-size: 22px;
     color: aliceblue;
@@ -45,4 +43,7 @@
 
 .genres div {
     display: flex;
+}
+.studiosss {
+    color: gray;
 }

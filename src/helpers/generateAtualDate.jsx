@@ -1,5 +1,5 @@
 export function generateAtualDate() {
-    const option = {
+    const options = {
         timezone: "America/Sao_Paulo",
         day: "2-digit",
         month: "2-digit",

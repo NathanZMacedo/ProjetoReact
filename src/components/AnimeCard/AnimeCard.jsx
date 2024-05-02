@@ -21,7 +21,7 @@ function AnimeCard(props) {
             </div>
         </div>
 
-        <div>
+        <div className='studiosss'>
             <div>
                 {props.studios.map((s)=>(
                     <p key={s.name}> {s.name} </p>

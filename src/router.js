@@ -4,6 +4,7 @@ import AnimePage from "../src/pages/AnimePages/AnimePage"
 import Layout from "./pages/Layout/Layout";
 import { createBrowserRouter } from "react-router-dom";
 import Favorito from "./components/Favoritos/Favorito";
+import NotesPage from "./pages/NotesPage/NotesPage"
 
 export const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
                 loader: async() => {
                     return fetch(`https://api.jikan.moe/v4/anime?q=pokemon`)
                 }
+            },
+            {
+                path: "/notes",
+                element: <NotesPage></NotesPage>
             }
 
         ], errorElement: <errorPage></errorPage>
