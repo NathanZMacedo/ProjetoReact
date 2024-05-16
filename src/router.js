@@ -5,6 +5,7 @@ import Layout from "./pages/Layout/Layout";
 import { createBrowserRouter } from "react-router-dom";
 import Favorito from "./components/Favoritos/Favorito";
 import NotesPage from "./pages/NotesPage/NotesPage"
+import LoginPage from "./pages/LoginPage/LoginPage";
 
 export const router = createBrowserRouter([
     {
@@ -29,8 +30,11 @@ export const router = createBrowserRouter([
             {
                 path: "/notes",
                 element: <NotesPage></NotesPage>
+            },
+            {
+                path: "/login",
+                element: <LoginPage/>
             }
-
         ], errorElement: <errorPage></errorPage>
     }
 ])

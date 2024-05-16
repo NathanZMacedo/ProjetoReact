@@ -27,9 +27,13 @@ nav div a{
 }
 
 nav div a:hover {
-    background-color: #93dad3;
+    background-color: #333;
     font-size: 1.65rem;
 }
 
+#deslogarButton{
+    cursor: pointer;
+
+}
 
 

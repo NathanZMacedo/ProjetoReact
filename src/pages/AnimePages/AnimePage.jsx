@@ -4,6 +4,8 @@ import Popup from '../../components/Popup/Popup'
 
 import './AnimePage.css'
 import AnimeCard from '../../components/AnimeCard/AnimeCard';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 function AnimePage() {
     const [animeName, setAnimeName] = useState("one punch");
@@ -11,6 +13,15 @@ function AnimePage() {
     const {animeData, loading, error} = useApiAnimeData(animeName);
     const [showPopup,setShowPopup ] = useState(false);
     const [popupContent, setPopupContent] = useState({message:"", color:""})
+
+    const isLogged = useSelector((state)=> state.user.isLogged);
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (isLogged == false) {
+      navigate ("/login");
+    }
+  }, []);
     
     const hadleInputChange=(e)=>{
         setAnimeDigitado(e.target.value);
